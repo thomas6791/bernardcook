@@ -14,9 +14,11 @@
 h1, h2, h3 {
   font-family: 'Allison', cursive;
 }
+h1 { font-size: 4em; }
 .inside {
   max-width: 1024px;
   margin: auto;
+  padding: 2em 0em;
 }
 .yellow {
   background-color: $yellow;
@@ -28,5 +30,15 @@ h1, h2, h3 {
     list-style: none;
     height: 5em;
     width: 100%;
+  }
+}
+.banner {
+  color: white;
+  background-color: $black;
+  .inside { display: flex;
+    div:first-of-type {
+      flex-grow: 1;
+    }
+    img { width: 50%; }
   }
 }
