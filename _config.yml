@@ -36,6 +36,31 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+locale: fr-FR
+twitter:
+  username: benbalter
+  card: summary
+facebook:
+  app_id: 1234
+  publisher: 1234
+  admins: 1234
+
+social:
+  name: Ben Balter
+  links:
+    - https://twitter.com/BenBalter
+    - https://www.facebook.com/ben.balter
+    - https://www.linkedin.com/in/BenBalter
+    - https://github.com/benbalter
+    - https://keybase.io/benbalter
+
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  yandex: 1234
+  baidu: 1234
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
