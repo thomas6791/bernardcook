@@ -2,6 +2,7 @@
 //font-family: 'Assistant', sans-serif;
 //font-family: 'Klee One', cursive;
 //font-family: 'Urbanist', sans-serif;
+@import "colors";
 * {
   margin : 0;
   padding: 0;
@@ -10,7 +11,22 @@
 .current {
   color: green;
 }
-h1 {
-  font-size: 2em;
+h1, h2, h3 {
   font-family: 'Allison', cursive;
+}
+.inside {
+  max-width: 1024px;
+  margin: auto;
+}
+.yellow {
+  background-color: $yellow;
+}
+.presta-list {
+  display: flex;
+  li {
+    border: solid 1px;
+    list-style: none;
+    height: 5em;
+    width: 100%;
+  }
 }

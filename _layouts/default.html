@@ -4,11 +4,17 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     {% feed_meta %}
     {% seo %}
   </head>
   <body>
     {% include navigation.html %}
-    {{ content }}
+    <main>
+      <article>
+        {{ content }}
+      </article>
+    </main>
+    <footer></footer>
   </body>
 </html>
