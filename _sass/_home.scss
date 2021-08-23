@@ -19,6 +19,19 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
   grid-auto-rows: minmax(215px, auto);
   img { border: solid 1px $grey; border-radius: 3px; }
 }
+.presta-list {
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(215px, auto);
+  li {
+    border: solid 1px $grey;
+    list-style: none;
+    //height: 5em;
+    width: 100%;
+  }
+}
 .banner {
   background-size: cover;
   background-position: center;
@@ -40,6 +53,16 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
     font-family: "Avenir";
     font-weight: normal;
     font-size: 0.6em;
+  }
+}
+.banner {
+  color: white;
+  background-color: $black;
+  .inside { display: flex;
+    div:first-of-type {
+      flex-grow: 1;
+    }
+    img { width: 50%; }
   }
 }
 

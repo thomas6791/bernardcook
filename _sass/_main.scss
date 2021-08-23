@@ -12,9 +12,12 @@
   color: green;
 }
 h1, h2, h3 {
-  font-family: 'Allison', cursive;
+  //font-family: 'Allison', cursive;
 }
 h1 { font-size: 4em; }
+h2, h3 { font-family: "Avenir"; text-align: center;
+  padding: 0.5em 0;
+}
 .inside {
   max-width: 1024px;
   margin: auto;
@@ -24,23 +27,4 @@ h1 { font-size: 4em; }
 }
 .yellow {
   background-color: $yellow;
-}
-.presta-list {
-  display: flex;
-  li {
-    border: solid 1px;
-    list-style: none;
-    height: 5em;
-    width: 100%;
-  }
-}
-.banner {
-  color: white;
-  background-color: $black;
-  .inside { display: flex;
-    div:first-of-type {
-      flex-grow: 1;
-    }
-    img { width: 50%; }
-  }
 }
