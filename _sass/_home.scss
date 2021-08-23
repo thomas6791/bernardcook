@@ -25,9 +25,9 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
-  max-width: 1024px;
-  text-align: left;
-  margin: auto;
+  //max-width: 1024px;
+  //text-align: left;
+  //margin: auto;
   font-weight: bold;
   font-family: "Tamil MN";
   font-size: 2.5em;
@@ -38,9 +38,15 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
   }
 }
 
-.banner p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+.banner {
+  .container {
+    max-width: 1024px;
+    text-align: left;
+    margin: auto;
+  }
+  a {
+    color: white;
+    font-family: "Avenir";
+    text-decoration: none;
+  }
 }
