@@ -31,6 +31,20 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
     //height: 5em;
     width: 100%;
   }
+  &.nospace {
+    grid-gap: 0px;
+    li {
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color : whitesmoke;
+      &:hover {
+        h3 {}
+      }
+    }
+    li:first-of-type { color: white; }
+  }
 }
 .banner {
   background-size: cover;
