@@ -37,4 +37,5 @@ p { font-family: "Avenir"; }
 .flex {
   display: flex;
   flex-wrap: wrap;
+  &.reverse { flex-direction: row-reverse; }
 }
