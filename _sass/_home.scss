@@ -22,7 +22,7 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
 .presta-list {
   display: grid;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(215px, auto);
   li {
@@ -80,4 +80,13 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
     border-radius: 3px;
     padding: 0.2em 1em;
   }
+}
+.clients-pictos {
+  display: flex; justify-content: center;
+  li {
+    display: flex;
+    align-items: center;
+    margin: 0em 1em;
+  }
+  img { height: 50px; width: auto; filter: sepia(1); }
 }
