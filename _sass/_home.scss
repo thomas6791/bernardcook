@@ -61,12 +61,14 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
   //text-align: left;
   //margin: auto;
   font-weight: bold;
-  font-family: "Tamil MN";
-  font-size: 2.5em;
+  //font-family: "Tamil MN";
+  font-family: "Allison";
+  font-size: 5em;
+  line-height: 0.5em;
   & > span {
     font-family: "Avenir";
     font-weight: normal;
-    font-size: 0.6em;
+    font-size: 0.25em;
   }
 }
 .banner {
