@@ -23,6 +23,7 @@ h1 { font-size: 4em; }
 h2, h3 { font-family: "Avenir"; text-align: center;
   padding: 0.5em 0;
 }
+p { font-family: "Avenir"; }
 .inside {
   max-width: 1024px;
   margin: auto;
@@ -32,4 +33,7 @@ h2, h3 { font-family: "Avenir"; text-align: center;
 }
 .yellow {
   background-color: $yellow;
+}
+.flex {
+  display: flex;
 }
