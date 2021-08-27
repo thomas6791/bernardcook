@@ -9,9 +9,47 @@
 
 @media all and (min-width: 768px) and (max-width: 1024px) { }
 
-@media all and (min-width: 480px) and (max-width: 768px) { }
+@media all and (min-width: 480px) and (max-width: 768px) {
+  #menuToggle {
+    top: 25px !important;
+    left: 25px !important;
+  }
+  .banner {
+    background-position: center right 30% !important;
+  }
+  .container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .inside {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  #about {
+    div { width: 100%; }
+  }
+}
 
-@media all and (max-width: 480px) { }
+@media all and (max-width: 480px) {
+  #menuToggle {
+    top: 25px !important;
+    left: 25px !important;
+  }
+  .banner {
+    background-position: center right 30% !important;
+  }
+  .container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .inside {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  #about {
+    div { width: 100%; }
+  }
+}
 
 /*------------------------------------------
   Foundation Media Queries
