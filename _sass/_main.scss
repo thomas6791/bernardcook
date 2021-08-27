@@ -8,6 +8,10 @@
   padding: 0;
   box-sizing: content-box;
 }
+html, body {
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
 header { height: 0px; }
 .current {
   color: green;

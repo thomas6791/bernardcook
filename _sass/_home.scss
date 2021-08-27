@@ -9,7 +9,7 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
     height: auto;
   }
   p { font-family: "Avenir"; }
-  div:first-of-type { padding-right: 1em; max-width: 50%; }
+  div:first-of-type { padding-right: 1em; width: 50%; }
 
 }
 .posts {
@@ -102,10 +102,12 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
 }
 .clients-pictos {
   display: flex; justify-content: center;
+  flex-wrap: wrap;
   li {
     display: flex;
     align-items: center;
     margin: 0em 1em;
+    flex-wrap: wrap;
   }
   img { height: 50px; width: auto; filter: sepia(1); }
 }
