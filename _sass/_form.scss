@@ -1,16 +1,25 @@
+@import "colors";
 form {
   font-family: "Avenir";
   width: 50%;
-  input {
+  div { margin-bottom: 0.5em; }
+  input, textarea {
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border: solid 1px $grey;
+    border-radius: 3px;
   }
   label { display: block; }
   .full {
     display: flex;
+    justify-content: space-between;
     width: 100%;
+    .half { width: 48%; }
   }
   .half, input, label, textarea {
     width: 100%;
+    font-family: "Avenir";
   }
 }
