@@ -1,0 +1,14 @@
+@import "colors";
+.btn {
+  &.btn-primary {
+    background-color: $red;
+    font-family: 'Avenir';
+    border: none;
+    width: auto;
+    cursor: pointer;
+    padding: 0.3em 2em;
+    border-radius: 3px;
+    font-weight: 500;
+    color: white;
+  }
+}
