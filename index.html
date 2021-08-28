@@ -1,6 +1,34 @@
 ---
 layout: default
-title: Bernard Cook | Paella à domicile
+title: Bernard Cook | Votre chef à domicile
+
+forms:
+  - to: hunckler.thomas@hotmail.fr
+    subject: Nouvelle demande
+    redirect: /
+    form_engine: formspree
+    placeholders: false
+    fields:
+      - name: name
+        input_type: text
+        placeholder: Nom
+        required: true
+      - name: email
+        input_type: email
+        placeholder: Email
+        required: true
+      - name: message
+        input_type: textarea
+        placeholder: Message
+        required: false
+      - name: terms
+        input_type: checkbox
+        placeholder: J'accepte que mes données soient transmises dans le cadre de ma demande
+        required: true
+      - name: submit
+        input_type: submit
+        placeholder: Envoyer
+        required: true
 ---
 <section class="banner" style="background-image: url(assets/images/paella.jpg);">
   <div class="container">
@@ -86,6 +114,7 @@ title: Bernard Cook | Paella à domicile
 <section id="contact">
   <div class="inside">
     <h2>Contact</h2>
+    {% if page.forms[0] %}{% include form.html form="1" %}{% endif %}
     // cuisine nomade
   </div>
 </section>
