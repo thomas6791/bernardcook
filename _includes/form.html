@@ -28,7 +28,7 @@
         {% if item.input_type == 'textarea' %}
             <div>
                 <label {% if pageform.placeholders == true %}class="sr-only"{% endif %} for="{{ item.name }}">{{ item.placeholder }}{{ requiredstar }}</label>
-                <textarea name="{{ item.name }}" name="{{ item.name }}" id="{{ item.name }}" cols="30" rows="10" class="form-control" {% if pageform.placeholders == true %}placeholder="{{ item.placeholder }}{{ requiredstar }}"{% endif %} {{ requiredtext }}></textarea>
+                <textarea name="{{ item.name }}" name="{{ item.name }}" id="{{ item.name }}" cols="30" rows="5" class="form-control" {% if pageform.placeholders == true %}placeholder="{{ item.placeholder }}{{ requiredstar }}"{% endif %} {{ requiredtext }}></textarea>
             </div>
         {% elsif item.input_type == 'radio' %}
             <div class="radio">
