@@ -29,6 +29,10 @@
     div { width: 100%; }
   }
   .texte { width: 100% !important; }
+  form {
+    width: 100% !important; margin: auto;
+    padding: 0px;
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -51,6 +55,10 @@
     div { width: 100%; }
   }
   .texte { width: 100% !important;}
+  form {
+    width: 100% !important; margin: auto;
+    padding: 0px;
+  }
 }
 
 /*------------------------------------------
