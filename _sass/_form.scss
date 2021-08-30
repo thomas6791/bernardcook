@@ -2,6 +2,9 @@
 form {
   font-family: "Avenir";
   width: 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   div { margin-bottom: 0.5em; }
   input, textarea {
     font-size: 1em;
@@ -10,6 +13,9 @@ form {
     padding-right: 0.5em;
     border: solid 1px $grey;
     border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
   label { display: block; }
   .full {
@@ -21,6 +27,9 @@ form {
   .half, input, label, textarea {
     width: 100%;
     font-family: "Avenir";
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
   .checkbox {
     label {

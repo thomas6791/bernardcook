@@ -1,5 +1,8 @@
 @import "colors";
 .btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   &.btn-primary {
     background-color: $red;
     font-family: 'Avenir';
