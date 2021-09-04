@@ -1,7 +1,8 @@
 backend:
-  name: github
-  repo: thomas6791/bernardcook
-  branch: master
+  #name: github
+  #repo: thomas6791/bernardcook
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
 
 publish_mode: editorial_workflow
 
