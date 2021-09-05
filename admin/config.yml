@@ -20,3 +20,24 @@ collections:
       - {label: "Auteur", name: "author", widget: "string"}
       - {label: "Twitter Card", name: "image", widget: "image"}
       - {label: "Texte", name: "body", widget: "markdown"}
+
+  - label: "Sitewide Options"
+    name: options
+    editor:
+      preview: false
+    files:
+      - label: "Navigation Menu"
+        name: nav
+        file: "_data/navigation.yml"
+        fields:
+          - label: "Nav Items"
+            label_singular: "Nav Item"
+            name: topLevelItems
+            widget: list
+            fields:
+              - {label: "Display Text", name: displayText, widget: string}
+              - {label: URL, name: url, widget: string}
+              - label: "Item Type"
+                name: itemType
+                widget: select
+                options: ["Link", "Button"]
