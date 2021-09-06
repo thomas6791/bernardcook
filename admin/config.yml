@@ -32,7 +32,7 @@ collections:
         fields:
           - label: "Nav Items"
             label_singular: "Nav Item"
-            name: topLevelItems
+            name: navigation
             widget: list
             fields:
               - {label: "Display Text", name: displayText, widget: string}

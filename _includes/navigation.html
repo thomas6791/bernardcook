@@ -24,7 +24,7 @@
     but hey, it's pure CSS magic.
     -->
     <ul id="menu">
-      {% for item in site.data.navigation %}
+      {% for item in site.data.navigation.navigation %}
     <a href="#" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
   {% endfor %}
     </ul>
