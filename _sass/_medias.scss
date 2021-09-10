@@ -33,6 +33,11 @@
     width: 100% !important; margin: auto;
     padding: 0px;
   }
+  #offers {
+    display: flex;
+    flex-wrap: wrap;
+    .flex { width: 100% !important; }
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -58,6 +63,11 @@
   form {
     width: 100% !important; margin: auto;
     padding: 0px;
+  }
+  #offers {
+    display: flex;
+    flex-wrap: wrap;
+    .flex { width: 100% !important; }
   }
 }
 
