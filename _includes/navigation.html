@@ -25,7 +25,7 @@
     -->
     <ul id="menu">
       {% for item in site.data.navigation.navigationItems %}
-    <a href="#" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
   {% endfor %}
     </ul>
   </div>

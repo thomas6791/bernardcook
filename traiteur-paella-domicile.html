@@ -2,4 +2,21 @@
 layout: default
 title: Traiteur paella à domicile Alsace
 ---
-<h1>Traiteur paella à domicile</h1>
+<section class="inside">
+  <h1>Traiteur paella à domicile</h1>
+  <p>fefffe</p>
+</section>
+<section>
+  <ul>
+    <li>Evenement #1</li>
+  </ul>
+</section>
+<section>
+  <h2>Je me déplace</h2>
+    </ul>
+      {% for item in site.data.zones_chalandise.Alsace %}
+        <li>{{ item.ville }} {{ item.code_postal }}</li>
+      {% endfor %}
+    </ul>
+</section>
+
