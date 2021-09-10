@@ -38,38 +38,8 @@ forms:
     <a class="btn btn-flat" href="#contact">Nous contacter</a>
   </div>
 </section>
-<section class="" id="specialites">
-  <div class="inside">
-    <h2>Nos spécialités</h2>
-    <div class="flex">
-      <img src="https://www.trevijano.com/wp-content/uploads/Paella-6V.png" width="500" alt="">
-      <div class="texte">
-        <h3>Paëlla</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-      </div>
-    </div>
-    <div class="flex reverse">
-      <img src="https://www.trevijano.com/wp-content/uploads/Paella-6V.png" width="500" alt="">
-      <div class="texte">
-        <h3>Jumbalaya</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-      </div>
-    </div>
-    <div class="flex">
-      <img src="https://www.trevijano.com/wp-content/uploads/Paella-6V.png" width="500" alt="">
-      <div class="texte">
-        <h3>Fiduea</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="">
-  <div class="inside">
-    <h2>Nos autres spécialités</h2>
-    <img src="" width="" alt="">
-  </div>
-</section>
+{% include specialites.html %}
+
 <section>
   <div class="inside" id="events">
     <h2>Nos prestations pour vos événements</h2>
@@ -87,6 +57,12 @@ forms:
     </ul>
   </div>
 </section>
+<section class="">
+  <div class="inside">
+    <h2>Nos autres spécialités</h2>
+    {% include carrousel.html %}
+  </div>
+</section>
 <section>
   <div class="inside propos" id="about">
     <div>
@@ -96,6 +72,7 @@ forms:
     <img src="https://as1.ftcdn.net/v2/jpg/01/27/80/58/1000_F_127805814_DxphqRV8PpUGlDWLlc5DIWc7UYDbGpBK.jpg" width="460" alt="">
   </div>
 </section>
+
 <section id="temoignages">
   <h2>Ils ont été conquis !</h2>
 </section>
