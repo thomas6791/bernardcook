@@ -1,0 +1,36 @@
+@import "colors";
+.banner-color {
+  /* Rectangle 4: */
+  background-image: linear-gradient(55deg, #000000 0%, #D8737F 100%);
+  color: white;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  div {
+    max-width: 1024px;
+    width: 1024px;
+    margin: auto;
+    //background-color: white;
+    //height: 120px;
+    display: flex;
+    padding: 0;
+    //justify-content: center;
+    height: 100%;
+    align-items: end;
+    //align-items: end;
+    //padding: 2em;
+    h1 {
+      color: $black;
+      flex-wrap: wrap;
+      font-weight: 400;
+      width: 90%;
+      background-color: white;
+      padding: 10px;
+      height: 120px;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+    }
+  }
+}
