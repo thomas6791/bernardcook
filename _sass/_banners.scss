@@ -1,7 +1,7 @@
 @import "colors";
 .banner-color {
   /* Rectangle 4: */
-  background-image: linear-gradient(55deg, #000000 0%, #D8737F 100%);
+  background-image: linear-gradient(55deg, #000000 0%, $yellow 100%);
   color: white;
   height: 350px;
   display: flex;
