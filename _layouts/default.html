@@ -2,6 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TDZF9S6');
+    </script>
+    <!-- End Google Tag Manager -->
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="../../../assets/css/styles.css">
     <!-- For styles with static names... -->
@@ -13,6 +21,13 @@
     {% seo %}
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDZF9S6"
+        height="0" width="0" style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header>
       {% include navigation.html %}
     </header>
@@ -26,17 +41,5 @@
         <i class="fa fa-facebook"></i>
       </div>
     </footer>
-    <script>
-      window.axeptioSettings = {
-        clientId: "6140ff93ad53a11834b61619",
-        cookiesVersion: "bernardcook-base",
-      };
-       
-      (function(d, s) {
-        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
-        e.async = true; e.src = "//static.axept.io/sdk.js";
-        t.parentNode.insertBefore(e, t);
-      })(document, "script");
-    </script>
   </body>
 </html>
