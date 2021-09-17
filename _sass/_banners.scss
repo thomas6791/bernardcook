@@ -4,21 +4,26 @@
   //background-image: linear-gradient(55deg, #000000 0%, $yellow 100%);
   /* Rectangle 4: */
   background-image: linear-gradient(46deg, rgba(0,0,0,0.74) 0%, $yellow 100%);
+
   /* Rectangle 4: */
   //background-image: linear-gradient(223deg, #FFFFFF 0%, #F3D5D9 19%, #E8ADB4 43%, $yellow 76%);
   color: white;
   height: 350px;
   display: flex;
+  -webkit-display: flex;
   justify-content: center;
-  align-items: end !important;
+  align-items: end;
+   -webkit-align-items: flex-end;
   .test {
     max-width: 1024px;
     width: 100%;
     height: 100%;
     //background-color: green;
     display: flex;
+    -webkit-display: flex;
     justify-content: flex-start;
-    align-items: end !important;
+    align-items: end;
+     -webkit-align-items: flex-end;
     div {
       width: 90%;
       height: 120px;
@@ -43,6 +48,6 @@
       }
     }
   }
-  svg { position: absolute;}
+  svg { position: absolute; max-width: 1024px; width: 100%; }
 }
 
