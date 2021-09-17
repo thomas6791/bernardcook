@@ -38,6 +38,10 @@
     flex-wrap: wrap;
     .flex { width: 100% !important; }
   }
+  .banner-color {
+    div { width: 95%; }
+    h1 { font-size: 1.8em; width: 100%; }
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -68,6 +72,10 @@
     display: flex;
     flex-wrap: wrap;
     .flex { width: 100% !important; }
+  }
+  .banner-color {
+    div { width: 95%; }
+    h1 { font-size: 1.8em; width: 100%; }
   }
 }
 
