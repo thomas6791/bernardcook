@@ -20,7 +20,7 @@ header { height: 0px; }
 .current {
   color: green;
 }
-h1, h2, h3 {
+h1, h2, h3, p, ul, li {
   //font-family: 'Allison', cursive;
   font-family: "Avenir";
 }
@@ -28,7 +28,7 @@ h1 { font-size: 4em; }
 h2, h3 { font-family: "Avenir"; text-align: center;
   padding: 0.5em 0;
 }
-p { font-family: "Avenir"; }
+.titre-page { font-size: 2.5em; text-align: center; }
 .inside {
   max-width: 1024px;
   margin: auto;
