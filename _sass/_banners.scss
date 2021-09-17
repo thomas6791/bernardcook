@@ -10,7 +10,7 @@
   height: 350px;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: end !important;
   .test {
     max-width: 1024px;
     width: 100%;
@@ -18,7 +18,7 @@
     //background-color: green;
     display: flex;
     justify-content: flex-start;
-    align-items: end;
+    align-items: end !important;
     div {
       width: 90%;
       height: 120px;
