@@ -1,9 +1,12 @@
 @import "colors";
 .banner-color {
+  position: relative;
   /* Rectangle 4: */
   //background-image: linear-gradient(55deg, #000000 0%, $yellow 100%);
   /* Rectangle 4: */
-  background-image: linear-gradient(46deg, rgba(0,0,0,0.74) 0%, $yellow 100%);
+  //background-image: linear-gradient(46deg, rgba(0,0,0,0.74) 0%, $yellow 100%);
+  /* Rectangle 4: */
+  background-image: linear-gradient(45deg, rgba(0,0,0,0.74) 0%, rgba(252,187,109,0.81) 100%);
 
   /* Rectangle 4: */
   //background-image: linear-gradient(223deg, #FFFFFF 0%, #F3D5D9 19%, #E8ADB4 43%, $yellow 76%);
@@ -77,6 +80,12 @@
     }
   }
 
-  svg { position: absolute; max-width: 1024px; width: 100%; }
+  svg { position: absolute; max-width: 1024px; width: 100%; right: 0; }
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+  }
 }
 
