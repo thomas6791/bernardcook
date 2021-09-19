@@ -5,4 +5,14 @@ footer {
   background-color: $black;
   margin-top: 1em;
   color: white;
+  .footer-links {
+    list-style-type: none;
+    display: flex;
+    li { padding-right: 1em; }
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.8em;
+    }
+  }
 }
