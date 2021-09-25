@@ -64,6 +64,23 @@ webmaster_verifications:
   yandex: 1234
   baidu: 1234
 
+pages_mentions:
+  adresse_site: https://www.bernardcook.fr
+  raison_sociale: Bernard Cron SARL
+  nom_entreprise: Bernard Cook
+  responsable_donnees: XXX
+  adresse_entreprise: XXX
+  capital_social: XX
+  tva_intra: XX
+  adresse_entreprise: XX
+  zip_code_entreprise: XX
+  tel_entreprise: XX
+  mail_entreprise: ....@bernardcook.fr
+  directeur_publication:
+  hebergeur_name: netlify
+  hebergeur_adresse: netlify
+
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
