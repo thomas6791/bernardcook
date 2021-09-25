@@ -80,6 +80,8 @@ pages_mentions:
   hebergeur_name: netlify
   hebergeur_adresse: netlify
 
+  editeur_site: weddoz SAS
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
