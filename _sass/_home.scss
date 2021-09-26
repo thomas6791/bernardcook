@@ -138,13 +138,31 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
   display: flex;
   margin-top: 2em;
   margin-bottom: 2em;
-  flex-direction: row-reverse;
+  position: relative;
   h2 {
     font-family: 'Allison'; font-weight: 400;
     text-align: left;
-    width: 70%;
+    width: 60%;
     line-height: 1em;
     padding: 0px;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    z-index: 10;
+    color: burlywood;
   }
-  img { width: 30%; height: auto;}
+  .img-gradient {
+    width: 300px;
+    height: auto;
+    position:relative;
+    color: white;
+    img { height: 400px; max-width: 100%; width: 300px; object-fit: cover; }
+  }
+  .img-gradient::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 300px; height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.6));
+  }
 }
