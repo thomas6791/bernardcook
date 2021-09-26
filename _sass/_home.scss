@@ -131,3 +131,13 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
   }
 }
 .bouton { display: flex; }
+.accroche {
+  font-size: 1.5em;
+  font-weight: 200;
+  padding: 0;
+  h2 {
+    font-family: 'Allison'; font-weight: 400;
+    text-align: left;
+    width: 80%;
+  }
+}
