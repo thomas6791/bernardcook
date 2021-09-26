@@ -138,12 +138,13 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
   display: flex;
   margin-top: 2em;
   margin-bottom: 2em;
+  flex-direction: row-reverse;
   h2 {
     font-family: 'Allison'; font-weight: 400;
     text-align: left;
-    width: 80%;
+    width: 70%;
     line-height: 1em;
     padding: 0px;
   }
-  img { width: 20%; height: auto;}
+  img { width: 30%; height: auto;}
 }
