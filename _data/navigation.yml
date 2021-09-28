@@ -1,11 +1,11 @@
 navigationItems:
-- name: Home
+- name: Accueil
   link: /
 - name: About
   link: /about.html
 - name: Nos spécialités
   link:
-- name: Contact
-  link:
+- name: Contact & Devis
+  link: /contact.html
 - name: Traiteur
   link: /traiteur-paella-domicile.html

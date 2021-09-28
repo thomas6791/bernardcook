@@ -42,6 +42,11 @@
     div { width: 95%; }
     h1 { font-size: 1.8em; width: 100%; }
   }
+  .accroche {
+    h2 {
+      width: 85%;
+    }
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -76,6 +81,11 @@
   .banner-color {
     div { width: 95%; }
     h1 { font-size: 1.8em; width: 100%; }
+  }
+  .accroche {
+    h2 {
+      width: 85%;
+    }
   }
 }
 
