@@ -64,6 +64,26 @@ webmaster_verifications:
   yandex: 1234
   baidu: 1234
 
+pages_mentions:
+  adresse_site: https://www.bernardcook.fr
+  raison_sociale: Bernard Cron SARL
+  nom_entreprise: Bernard Cook
+  responsable_donnees_personnelles: XXX
+  capital_social: XX
+  tva_intra: XX
+  adresse_entreprise: XX rue de XXX
+  zip_code_entreprise: 67500
+  ville_entreprise: Haguenau
+  tel_entreprise: +333XXXXXXX
+  mail_entreprise: ....@bernardcook.fr
+  directeur_publication:
+  hebergeur_name: netlify
+  hebergeur_site : https://www.netlify.com
+  hebergeur_adresse: sise 610 22nd Street, Suite 315 – CA 94107 San Francisco +1 (844) 899-7312
+
+  editeur_site: weddoz SAS
+
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

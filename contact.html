@@ -1,0 +1,69 @@
+---
+layout: default
+title: Contact & Devis | Bernard Cook
+
+forms:
+  - to: hunckler.thomas@hotmail.fr
+    subject: Nouvelle demande
+    redirect: /
+    form_engine: formspree
+    placeholders: false
+    fields:
+      - name: name
+        input_type: text
+        placeholder: Nom
+        required: true
+      - name: email
+        input_type: email
+        placeholder: Email
+        required: true
+      - name: message
+        input_type: textarea
+        placeholder: Message
+        required: false
+      - name: terms
+        input_type: checkbox
+        placeholder: J'accepte que mes données soient transmises dans le cadre de ma demande
+        required: true
+      - name: submit
+        input_type: submit
+        placeholder: Envoyer
+        required: true
+---
+<section id="mentions" class="inside">
+  <h1>Contact & Devis</h1>
+  {% if page.forms[0] %}{% include form.html form="1" %}{% endif %}
+</section>
+<script>
+  fetch('https://jsonplaceholder.typicode.com/users')
+  .then(checkStatus)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log('There was an error', error);
+  });
+
+
+function checkStatus(response) {
+  if (response.ok) {
+      return response;
+  }
+
+  let error = new Error(response.statusText);
+  error.response = response;
+  return Promise.reject(error);
+}
+</script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>

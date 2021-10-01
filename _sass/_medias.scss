@@ -42,6 +42,18 @@
     div { width: 95%; }
     h1 { font-size: 1.8em; width: 100%; }
   }
+  .accroche {
+    h2 {
+      width: 85%;
+    }
+    .img-gradient::after {
+      content: '';
+      position: absolute;
+      left: 0; top: 0;
+      width: 300px; height: 350px;
+      background: none;
+    }
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -76,6 +88,19 @@
   .banner-color {
     div { width: 95%; }
     h1 { font-size: 1.8em; width: 100%; }
+  }
+  .accroche {
+    h2 {
+      width: 85%;
+    }
+    .img-gradient::after {
+      content: '';
+      position: absolute;
+      left: 0; top: 0;
+      width: 300px; height: 350px;
+      background: none;
+      //background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.6));
+    }
   }
 }
 
