@@ -150,6 +150,11 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
   height: 450px;
   position: relative;
   margin-top: 15em;
+  background: url(https://t3.ftcdn.net/jpg/04/35/60/96/240_F_435609606_KgXAz2sgnnfqefOmyuJnVKMxOqu4UaFe.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   .inside {
     position: absolute;
     top: -200px;

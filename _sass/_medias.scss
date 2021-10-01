@@ -59,6 +59,13 @@
       }
     }
   }
+  #specialites {
+    height: auto;
+    position: static;
+    .inside { position: static;
+    h2 { color: white; }
+    }
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -110,6 +117,13 @@
   .just-flex {
     div:nth-last-child(-n+2) {
       display: none;
+    }
+  }
+  #specialites {
+    height: auto;
+    position: static;
+    .inside { position: static;
+    h2 { color: white; }
     }
   }
 }
