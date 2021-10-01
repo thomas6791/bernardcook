@@ -8,6 +8,7 @@ footer {
   .footer-links {
     list-style-type: none;
     display: flex;
+    justify-content: center;
     li { padding-right: 1em; }
     a {
       color: white;
