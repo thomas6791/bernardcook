@@ -1,0 +1,13 @@
+.reviews {
+  list-style: none;
+  .review {
+    padding: 1rem;
+    font-weight: lighter;
+    max-width: 50%;
+    background-color: ghostwhite;
+    span {
+      text-align: right;
+      display: block;
+    }
+  }
+}
