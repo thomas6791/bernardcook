@@ -1,9 +1,9 @@
 navigationItems:
 - name: Accueil
   link: /
-- name: About
-  link: /about.html
-- name: Nos spécialités
+- name: A propos
+  link: /a-propos.html
+- name: Mes spécialités
   link:
 - name: Paëlla à domicile
   link: /traiteur-paella-domicile.html
