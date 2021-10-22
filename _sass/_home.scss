@@ -3,10 +3,11 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
   display: flex;
   h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0; }
   img {
-    border-radius: 3px;
+    //border-radius: 3px;
     width: 100%;
-    max-width: 460px;
+    max-width: 250px;
     height: auto;
+    object-fit: cover;
   }
   p { font-family: "Avenir"; }
   div:first-of-type { padding-right: 1em; width: 50%; }
