@@ -4,14 +4,18 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
   h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0; }
   img {
     //border-radius: 3px;
+    display: flex;
     width: 100%;
-    max-width: 250px;
+    //max-width: 250px;
     height: auto;
     object-fit: cover;
   }
+  img:first-of-type { filter: grayscale(35%); }
   p { font-family: "Avenir"; }
   div:first-of-type { padding-right: 1em; width: 50%; }
-
+  .images { max-width: 50%; width: 50%;
+    img { max-width: 50%; }
+  }
 }
 .posts {
   display: grid;
