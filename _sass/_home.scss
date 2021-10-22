@@ -3,14 +3,19 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
   display: flex;
   h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0; }
   img {
-    border-radius: 3px;
+    //border-radius: 3px;
+    display: flex;
     width: 100%;
-    max-width: 460px;
+    //max-width: 250px;
     height: auto;
+    object-fit: cover;
   }
+  img:first-of-type { filter: grayscale(35%); }
   p { font-family: "Avenir"; }
   div:first-of-type { padding-right: 1em; width: 50%; }
-
+  .images { max-width: 50%; width: 50%;
+    img { max-width: 50%; }
+  }
 }
 .posts {
   display: grid;
@@ -127,7 +132,7 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
     margin: 0em 1em;
     flex-wrap: wrap;
   }
-  img { height: 50px; width: auto; filter: sepia(1); }
+  img { height: 50px; width: auto; }
 }
 #specialites {
   h3 {
@@ -232,5 +237,16 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
     //grid-template-columns: repeat(3, 1fr);
     //grid-gap: 2px;
     //justify-content: space-evenly;
+  }
+}
+#contact {
+  .inside {
+    display: flex;
+    justify-content: space-between;
+    h2 { width: 100%; }
+    .map {
+      width: 48%;
+      img { width: 100%; }
+    }
   }
 }

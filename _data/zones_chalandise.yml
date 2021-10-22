@@ -1,5 +1,11 @@
 Alsace:
-  - ville: Neunhoffen
-    code_postal: 67110
+  - ville: Sarre Union
+    code_postal: 67260
   - ville: Haguenau
     code_postal: 67500
+  - ville: Wissembourg
+    code_postal: 67160
+  - ville: Saverne
+    code_postal: 67700
+  - ville: Niederbronn-les-Bains
+    code_postal: 67110
