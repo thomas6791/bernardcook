@@ -13,7 +13,7 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
   //img:first-of-type { filter: grayscale(35%); }
   p { font-family: "Avenir"; }
   div:first-of-type { padding-right: 1em; width: 50%; }
-  .images { max-width: 50%; width: 50%; justify-content: end;
+  .images { max-width: 100%; width: 50%; justify-content: end;
     img { height: 250px; object-fit: fill; border-radius: 3px;
     width: auto; }
   }
