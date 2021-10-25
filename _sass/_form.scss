@@ -6,7 +6,7 @@ form {
   -moz-appearance: none;
   appearance: none;
   div { margin-bottom: 0.5em; }
-  input, textarea {
+  input, textarea, select {
     font-size: 1em;
     line-height: 2em;
     padding-left: 0.5em;
@@ -24,7 +24,7 @@ form {
     width: 100%;
     .half { width: 48%; }
   }
-  .half, input, label, textarea {
+  .half, input, label, textarea, select {
     width: 100%;
     font-family: "Avenir";
     -webkit-appearance: none;
