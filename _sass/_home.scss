@@ -247,7 +247,7 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
   .inside {
     display: flex;
     justify-content: space-between;
-    h2 { width: 100%; }
+    h1, h2 { width: 100%; }
     .map {
       width: 48%;
       img { width: 100%; }
