@@ -144,12 +144,14 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
     font-weight: 300;
     text-align: left;
   }
-  .texte { width: 50%; }
+  .texte { width: 50%;
+  p {}
+  }
   #offers {
     display: flex;
     justify-content: space-between;
     .flex { width: 32%; }
-    img { width: 100%; }
+    img { width: 100%; object-fit: fill; }
     h3 { text-align: center; }
     .texte { width: 100%; }
     a { display: inline-block; margin: auto; }
