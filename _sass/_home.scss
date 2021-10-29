@@ -150,8 +150,12 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
   #offers {
     display: flex;
     justify-content: space-between;
-    .flex { width: 32%; }
-    img { width: 100%; object-fit: fill; }
+    .flex { width: 32%; justify-content: center; }
+    img {
+      width: 100%; object-fit: fill;
+      width: 320px; height: 230px;
+      margin-top: 1em;
+    }
     h3 { text-align: center; }
     .texte { width: 100%; }
     a { display: inline-block; margin: auto; }
