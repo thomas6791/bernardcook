@@ -72,3 +72,14 @@
 .plat-titre { grid-area: plat-titre; }
 .plat-image { grid-area: plat-image; width: 100% !important; filter: grayscale(0%) !important; }
 .plat-texte { grid-area: plat-texte; }
+
+@media all and (min-width: 480px) and (max-width: 768px) {}
+@media all and (max-width: 480px) {
+  .container-plat, .container-plat:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+  }
+  #propos {
+    h1 { text-align: center; }
+  }
+}
