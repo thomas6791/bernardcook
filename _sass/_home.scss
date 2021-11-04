@@ -259,3 +259,16 @@ h2 { font-size: 2em; text-align: center; font-family: "Avenir"; padding: 0.5em 0
     }
   }
 }
+@media all and (min-width: 480px) and (max-width: 768px) {}
+@media all and (max-width: 480px) {
+  .about-head {
+    .about-text {
+      .about-btn {
+      }
+    }
+  }
+  .flex.images.about-image {
+    margin-top: 1.5em;
+    img { width: 100%; }
+  }
+}
