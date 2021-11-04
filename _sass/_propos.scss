@@ -22,3 +22,13 @@
     }
   }
 }
+@media all and (min-width: 480px) and (max-width: 768px) {}
+@media all and (max-width: 480px) {
+  #propos {
+    img { float: left; margin: 0 15px 10px 0; width: 8em; }
+    .text, div:first-of-type {
+      display: initial;
+      width: 100%;
+    }
+  }
+}
