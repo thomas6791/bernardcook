@@ -7,7 +7,7 @@
   margin : 0;
   padding: 0;
   box-sizing: content-box;
-  overflow: scroll;
+  //overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
 *, *::before, *::after {
@@ -17,6 +17,7 @@ html, body {
   width: 100% !important;
   overflow-x: hidden !important;
 }
+body { height: 100vh; }
 header { height: 0px; }
 .current {
   color: green;
