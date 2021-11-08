@@ -79,21 +79,12 @@ title: Bernard Cook | Votre chef à domicile
 -->
 
 <section id="temoignages" class="inside">
-  {{ site.reviews }}
   <h2>Ils ont été conquis !</h2>
   <ul class="reviews">
     <li class="review shadow">
       <p>&ldquo;Pour vos repas associatifs, d'entreprise ou de famille, Bernard excelle et réveillera vos Papilles. Même lorsque bourrasques et averses se mêlent à la fête, il met du soleil dans les plats et les coeurs. Pour l'avoir sollicité maintes fois, je vous le recommande vivement.&rdquo;<br>
         <span>Thomas K.</span></p>
     </li>
-    {% for item in site.reviews %}
-      <li class="review shadow">
-        <p>&ldquo;{{ item.review | markdownify }}&rdquo;
-          <br>
-          <span>{{ item.author }}</span>
-        </p>
-      </li>
-    {% endfor %}
   </ul>
 </section>
 
