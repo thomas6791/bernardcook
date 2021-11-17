@@ -1,7 +1,7 @@
 @import "colors";
 
 footer {
-  height: 10em;
+  height: auto;
   background-color: $black;
   margin-top: 1em;
   color: white;
@@ -9,6 +9,7 @@ footer {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    margin-top: 3em;
     li { padding-right: 1em; }
   }
   a {
@@ -20,4 +21,17 @@ footer {
   .inside {
     padding: 1.2em 0em;
   }
+  .social-shares {
+    list-style-type: none;
+    display: flex;
+    margin-top: 1em;
+    i { font-size: 1.5em; }
+  }
+  .fa { font-size: 1em; margin-right: 0.5em; }
+  .flex {
+    div:first-of-type {
+      margin-right: 2em;
+    }
+  }
+  p, a { font-size: 0.9em; }
 }
