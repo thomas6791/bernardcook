@@ -1,22 +1,15 @@
 <section class="carousel">
-  <ul class="carousel-items">
-      <li class="carousel-item">
-          <div class="card">
-              <a href="/autres-suggestions.html#Chili Con Carne"><h3 class="card-title">Chili Con Carne</h3></a>
-              <img src="assets/images/chili.jpeg" class="" width="500" loading="lazy">
-              <div class="card-content">
-                  <p></p>
-              </div>
-          </div>
-      </li>
-      <li class="carousel-item">
-          <div class="card">
-              <a href="/autres-suggestions.html#Tartiflette"><h3 class="card-title">Tartiflette</h3></a>
-              <img src="assets/images/tartiflette.jpeg" class="" width="500" loading="lazy">
-              <div class="card-content">
-                  <p></p>
-              </div>
-          </div>
-      </li>
-  </ul>
+    <ul class="carousel-items">
+      {% for plat in site.plats %}
+        <li class="carousel-item">
+            <div class="card">
+                <a href="/autres-suggestions.html#{{plat.title}}"><h3 class="card-title">{{ plat.title }}</h3></a>
+                <img src="{{ plat.image | prepend: site.baseurl }}" alt="{{ plat.title }}" title="{{ plat.title }}" class="" width="500" loading="lazy">
+                <div class="card-content">
+                    <p></p>
+                </div>
+            </div>
+        </li>
+      {% endfor %}
+    </ul>
 </section>

@@ -61,12 +61,19 @@ social_links:
   facebook: https://www.facebook.com/Bernardcook-109306778223869
   instagram: https://www.instagram.com/bernardcook2021/
 
+
 webmaster_verifications:
   google: 1234
   bing: 1234
   alexa: 1234
   yandex: 1234
   baidu: 1234
+
+collections:
+  plats:
+    output: true
+  reviews:
+    output: true
 
 pages_mentions:
   adresse_site: https://www.bernardcook.fr

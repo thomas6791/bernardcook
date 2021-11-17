@@ -48,4 +48,4 @@ collections:
     create: true
     fields:
       - { label: 'Contenu texte', name: 'review', widget: 'markdown' }
-      - { label: 'Nom du client', name: 'author', widget: 'string' }
+      - { label: 'Nom du client', name: 'auteur', widget: 'string' }
