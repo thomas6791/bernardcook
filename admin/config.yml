@@ -47,5 +47,5 @@ collections:
     folder: "_reviews/"
     create: true
     fields:
-      - { label: 'Nom du client', name: 'auteur', widget: 'string' }
+      - {label: 'Nom du client', name: 'auteur', widget: 'string' }
       - {label: "Contenu texte", name: "body", widget: "markdown"}
