@@ -4,7 +4,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 
 media_folder: "assets/images"
 
@@ -47,5 +47,5 @@ collections:
     folder: "_reviews/"
     create: true
     fields:
-      - { label: 'Contenu texte', name: 'review', widget: 'markdown' }
       - { label: 'Nom du client', name: 'auteur', widget: 'string' }
+      - {label: "Contenu texte", name: "body", widget: "markdown"}
