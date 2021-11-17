@@ -95,9 +95,9 @@ title: Bernard Cook | Votre chef à domicile
   </div>
 </section>
 <h2>TEST</h2>
-  {% for staff_member in site.staff_members %}
-    <h2>{{ staff_member.name }} - {{ staff_member.position }}</h2>
-    <p>{{ staff_member.content | markdownify }}</p>
+  {% for plat in site.plats %}
+    <h2>{{ plat.name }} - {{ plat.position }}</h2>
+    <p>{{ plat.content | markdownify }}</p>
   {% endfor %}
 
 <section id="client" class="inside">

@@ -70,7 +70,7 @@ webmaster_verifications:
   baidu: 1234
 
 collections:
-  staff_members:
+  plats:
     output: true
 
 pages_mentions:
