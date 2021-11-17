@@ -10,7 +10,7 @@ bread: Autres suggestions
   {% for plat in site.plats %}
   <div class="container-plat">
     <h2 class="plat-titre" id="{{ plat.title }}">{{ plat.title }}</h2>
-    <img src="{{ plat.image | prepend: site.baseurl }}" alt="{{ plat.title }}" title="{{ plat.title }}" class="plat-image" width="500" loading="lazy">
+    <img src="../{{ plat.image | prepend: site.baseurl }}" alt="{{ plat.title }}" title="{{ plat.title }}" class="plat-image" width="500" loading="lazy">
     <div class="plat-texte">
       {{ plat.content }}
     </div>
