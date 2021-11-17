@@ -95,14 +95,10 @@ title: Bernard Cook | Votre chef à domicile
   </div>
 </section>
 <h2>TEST</h2>
-<ul>
-  {% for post in site.plats %}
-  {% assign plat = post %}
-    <li>
-      {{ plat.title }}
-    </li>
+  {% for staff_member in site.staff_members %}
+    <h2>{{ staff_member.name }} - {{ staff_member.position }}</h2>
+    <p>{{ staff_member.content | markdownify }}</p>
   {% endfor %}
-</ul>
 
 <section id="client" class="inside">
   <h2>Ils m'ont fait confiance</h2>
