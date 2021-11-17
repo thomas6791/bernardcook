@@ -72,6 +72,8 @@ webmaster_verifications:
 collections:
   plats:
     output: true
+  reviews:
+    output: true
 
 pages_mentions:
   adresse_site: https://www.bernardcook.fr
