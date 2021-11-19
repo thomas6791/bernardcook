@@ -49,6 +49,15 @@ h2, h3 { font-family: "Avenir"; text-align: center;
   display: flex;
   flex-wrap: wrap;
   &.reverse { flex-direction: row-reverse; }
+  &.side {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    justify-content: space-between;
+    //border: solid red 1px;
+    .first { width: 60% }
+    .second { width: 30%; }
+  }
+  img { object-fit: fill; height: auto; }
 }
 .just-flex {
   display: flex;
