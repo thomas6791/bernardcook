@@ -57,5 +57,6 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
       - {label: 'Titre du plat', name: 'title', widget: 'string' }
+      - {label: "Activé/En ligne", name: "published", widget: "boolean", default: true}
       - {label: 'Image du plat', name: 'image', widget: "image", required: true}
       - {label: "Contenu texte", name: "body", widget: "markdown"}

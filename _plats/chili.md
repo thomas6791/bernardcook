@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Chili Con Carne"
+published: true
 image: /assets/images/chili.jpeg
 ---
 Le chili con carne est un plat américain. Si son nom provient de l'espagnol "chile con carne" (piment avec de la viande) ce plat relevé est né au Sud des Etats-Unis, probablement au Texas.

@@ -1,6 +1,7 @@
 <section class="carousel">
     <ul class="carousel-items">
-      {% for plat in site.plats %}
+      {% assign plats = site.plats | where: "published",true %}
+      {% for plat in plats  %}
         <li class="carousel-item">
             <div class="card">
                 <a href="/autres-suggestions.html#{{plat.title}}"><h3 class="card-title">{{ plat.title }}</h3></a>
