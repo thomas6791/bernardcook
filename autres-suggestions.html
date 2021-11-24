@@ -7,7 +7,8 @@ bread: Autres suggestions
   <h1>Mes autres suggestions</h1>
   {% include breadcrumbs.html %}
   <br><br>
-  {% for plat in site.plats %}
+  {% assign plats = site.plats | where: "published",true %}
+  {% for plat in plats  %}
   <div class="container-plat">
     <h2 class="plat-titre" id="{{ plat.title }}">{{ plat.title }}</h2>
     <img src="../{{ plat.image | prepend: site.baseurl }}" alt="{{ plat.title }}" title="{{ plat.title }}" class="plat-image" width="500" loading="lazy">
