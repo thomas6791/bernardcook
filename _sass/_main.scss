@@ -80,9 +80,15 @@ h2, h3 { font-family: "Avenir"; text-align: center;
   }
 }
 .sub-banner {
+  //max-width: 1024px;
+  //margin: auto;
+  h1 {
+    //margin-top: 0.5em;
+    text-align: left;
+  }
   #breadcrumbs {
-    position: absolute;
-    bottom: 0px;
+    //position: absolute;
+    //bottom: 0px;
     color: black;
   }
 }
