@@ -1,0 +1,65 @@
+---
+layout: default
+title: Votre demande a été envoyée | Bernard Cook
+titre : Votre demande a été envoyée avec succès
+permalink: /success
+bread: Demande envoyée
+---
+<section class="banner" style="background-image: url(assets/images/banner-bernardcook-min.jpeg);">
+  <div class="container">
+    <span class="titre-banner mini">Bernard Cook<br>
+    <span class="">au service de la Cuisine .</span></span>
+    <br><br>
+    <a class="btn btn-flat" href="/contact.html">Contact & devis</a>
+    <ul class="social-shares">
+      <a href="{{site.social_links.facebook}}" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+      <a href="{{site.social_links.instagram}}" target="_blank"><li><i class="fa fa-instagram" aria-hidden="true"></i></li></a>
+    </ul>
+  </div>
+  <h1 class="titre-page">{{ page.titre }}</h1>
+</section>
+
+<div class="test">
+  <div class="sub-banner inside">
+    {% include breadcrumbs.html %}
+  </div>
+</div>
+<section class="inside">
+  <p>Votre demande a été envoyée avec succès</p>
+  <p>Nous vous contacterons dans les meilleurs délais</p>
+  <br><br>
+  <a href="/" class="button btn btn-primary yellow">Retourner sur la page d'accueil</a>
+</section>
+<script>
+  fetch('https://jsonplaceholder.typicode.com/users')
+  .then(checkStatus)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log('There was an error', error);
+  });
+
+
+function checkStatus(response) {
+  if (response.ok) {
+      return response;
+  }
+
+  let error = new Error(response.statusText);
+  error.response = response;
+  return Promise.reject(error);
+}
+</script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
