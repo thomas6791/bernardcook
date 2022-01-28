@@ -20,26 +20,27 @@ bread: traiteur fideua
 <section class="inside">
   <p>Je vous propose divers menus au fil des saisons et aux événements qui rythmes l'année.</p>
   <h2>En ce moment</h2>
-  <hr>
-  <div class="menu">
-    <h2>Titre menu</h2>
-    <p>fff</p>
-    <h3>Entrée froide</h3>
-    <p>fff</p>
-    <h3>Entrée chaude</h3>
-    <p>dddd</p>
-    <h3>Plat principal</h3>
-    <p>fff</p>
-    <h3>Dessert</h3>
-    <p></p>
-    <h3>Commande & conditions</h3>
-    <p>Pour minimum .. personnes</p>
-    <p>Cuisiné sur place</p>
-    <p>informations complémentaires</p>
-    <p class="prix"></p>
-    <p class="date-limite">Date limite de commande :</p>
-    <a href="/contact" class="btn btn-primary yellow">Commander</a>
-  </div>
+  {% assign items = site.domicile | where: "published",true %}
+  {% for item in items  %}
+    <div class="menu">
+      <h2>{{item.titre}}</h2>
+      <h3>Entrée froide</h3>
+      <p>fff</p>
+      <h3>Entrée chaude</h3>
+      <p>dddd</p>
+      <h3>Plat principal</h3>
+      <p>fff</p>
+      <h3>Dessert</h3>
+      <p></p>
+      <h3>Commande & conditions</h3>
+      <p>Pour minimum .. personnes</p>
+      <p>Cuisiné sur place</p>
+      <p>informations complémentaires</p>
+      <p class="prix"></p>
+      <p class="date-limite">Date limite de commande :</p>
+      <a href="/contact" class="btn btn-primary yellow">Commander</a>
+    </div>
+  {% endfor %}
 </section>
 <section class="inside">
   <h2>Les anciens menus</h2>
