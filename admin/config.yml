@@ -66,5 +66,9 @@ collections:
     folder: "_domicile/"
     create: true
     fields:
-      - {label: 'Nom du client', name: 'auteur', widget: 'string' }
+      - {label: 'Titre du menu', name: 'titre', widget: 'string' }
       - {label: "Contenu texte", name: "body", widget: "markdown"}
+      - {label: 'Prix/personne', name: 'prix', widget: 'integer' }
+      - {label: 'Nombre de personne minimum', name: 'people', widget: 'integer' }
+      - {label: 'Date limite pour passer commande', name: 'date_limit', widget: 'date' }
+
