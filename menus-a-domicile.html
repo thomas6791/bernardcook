@@ -28,13 +28,16 @@ bread: traiteur fideua
         <p>Commande possible jusqu'au {{item.date_limit | date: "%d.%m.%y" }}</p>
         <p class="prix shadow">{{item.prix}}/pers.</p>
       </div>
-      {{ item.content }}
-      <h3>Commande & conditions</h3>
-      <p>Pour minimum {{ item.min_people }} personnes</p>
-      <p>Cuisiné sur place</p>
-      <p>informations complémentaires</p>
-      <p class="date-limite">Date limite de commande : {{ item.date_limit }}</p>
-      <a href="/contact" class="btn btn-primary yellow">Commander</a>
+      <div class="menu-content">
+        {{ item.content }}
+        <h3>Commande & conditions</h3>
+        <p>Pour minimum {{ item.min_people }} personnes</p>
+        <p>Cuisiné sur place</p>
+        <p>informations complémentaires</p>
+        <p class="date-limite">Date limite de commande : {{ item.date_limit }}</p>
+        <br><br>
+        <a href="/contact" class="btn btn-primary yellow">Commander</a>
+      </div>
     </div>
   {% endfor %}
 </section>

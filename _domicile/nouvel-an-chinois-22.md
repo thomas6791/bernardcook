@@ -9,12 +9,12 @@ titre: Nouvel an chinois
 prix: 39€
 ---
 ### Entrée froide
-entrée
+Poke bowl de légume, herbes, graines, sauce et dés de truits saumonée de Sparbach
 ### Entrée chaude
-chaud
+Wok de moules à la thailandaise (céleri, citron vert, gingembre, coriandre, coco,...)
 ### Plat principal
-plat
+Wok de poulet fermier (Menchhoffen) aux légumes et aux herbes
 ### Dessert
-desset
+Financier au thé vert matcha et dôme au yuzu
 
 
