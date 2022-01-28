@@ -60,3 +60,11 @@ collections:
       - {label: "Activé/En ligne", name: "published", widget: "boolean", default: true}
       - {label: 'Image du plat', name: 'image', widget: "image", required: true}
       - {label: "Contenu texte", name: "body", widget: "markdown"}
+
+  - label: "Menus à domicile"
+    name: "domicile"
+    folder: "_domicile/"
+    create: true
+    fields:
+      - {label: 'Nom du client', name: 'auteur', widget: 'string' }
+      - {label: "Contenu texte", name: "body", widget: "markdown"}
