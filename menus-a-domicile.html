@@ -1,0 +1,46 @@
+---
+layout: default
+title: Traiteur à domicile en Alsace - Moselle | Bernard Cook
+titre : Menus réalisés à domicile
+bread: traiteur fideua
+---
+<section class="banner" style="background-image: url(assets/images/banner-bernardcook-min.jpeg);">
+  <div class="container">
+    <span class="titre-banner mini">Bernard Cook<br>
+    <span class="">au service de la Cuisine .</span></span>
+    <br><br>
+    <a class="btn btn-flat" href="/contact.html">Contact & devis</a>
+    <ul class="social-shares">
+      <a href="{{site.social_links.facebook}}" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+      <a href="{{site.social_links.instagram}}" target="_blank"><li><i class="fa fa-instagram" aria-hidden="true"></i></li></a>
+    </ul>
+  </div>
+  <h1 class="titre-page">{{ page.titre }}</h1>
+</section>
+<section class="inside">
+  <p style="max-width: 600px; margin: auto;">Je vous propose divers menus au fil des saisons et aux événements qui rythmes l'année. L'ensemble est réalisé sur place à votre domicile ou dans l'endroit de votre convenance.</p>
+  <h2>En ce moment</h2>
+  {% assign items = site.domicile | where: "published",true %}
+  {% for item in items  %}
+    <div class="menu shadow">
+      <div class="menu-banner" style="background-image: url(assets/images/banner-bernardcook-min.jpeg);">
+        <h2>{{item.titre}}</h2>
+        <p>Commande possible jusqu'au {{item.date_limit | date: "%d.%m.%y" }}</p>
+        <p class="prix shadow">{{item.prix}}/pers.</p>
+      </div>
+      <div class="menu-content">
+        {{ item.content }}
+        <h3>Commande & conditions</h3>
+        <p>Pour minimum {{ item.min_people }} personnes</p>
+        <p>Cuisiné sur place</p>
+        <p>Informations complémentaires</p>
+        <p class="date-limite">Date limite de commande : {{ item.date_limit | date: "%d.%m.%y" }}</p>
+        <br><br>
+        <a href="/contact" class="btn btn-primary yellow">Commander</a>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+<section class="inside">
+  <h2>Les anciens menus</h2>
+</section>

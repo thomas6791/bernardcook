@@ -74,6 +74,8 @@ collections:
     output: true
   reviews:
     output: true
+  domicile:
+    output: true
 
 pages_mentions:
   adresse_site: https://www.bernardcook.fr
