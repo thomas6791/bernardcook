@@ -97,4 +97,20 @@ h2, h3 { font-family: "Avenir"; text-align: center;
 }
 .menu {
   text-align: center;
+  border-radius: 5px;
+  padding: 1em;
+  position: relative;
+  .prix {
+    border-radius: 50%;
+    display: inline-flex;
+    height: auto;
+    width: 5em;
+    height: 5em;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
