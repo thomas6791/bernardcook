@@ -18,7 +18,7 @@ bread: traiteur fideua
   <h1 class="titre-page">{{ page.titre }}</h1>
 </section>
 <section class="inside">
-  <p>Je vous propose divers menus au fil des saisons et aux événements qui rythmes l'année.</p>
+  <p style="max-width: 600px; margin: auto;">Je vous propose divers menus au fil des saisons et aux événements qui rythmes l'année. L'ensemble est réalisé sur place à votre domicile ou dans l'endroit de votre convenance.</p>
   <h2>En ce moment</h2>
   {% assign items = site.domicile | where: "published",true %}
   {% for item in items  %}
@@ -33,8 +33,8 @@ bread: traiteur fideua
         <h3>Commande & conditions</h3>
         <p>Pour minimum {{ item.min_people }} personnes</p>
         <p>Cuisiné sur place</p>
-        <p>informations complémentaires</p>
-        <p class="date-limite">Date limite de commande : {{ item.date_limit }}</p>
+        <p>Informations complémentaires</p>
+        <p class="date-limite">Date limite de commande : {{ item.date_limit | date: "%d.%m.%y" }}</p>
         <br><br>
         <a href="/contact" class="btn btn-primary yellow">Commander</a>
       </div>
