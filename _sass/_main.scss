@@ -98,19 +98,28 @@ h2, h3 { font-family: "Avenir"; text-align: center;
 .menu {
   text-align: center;
   border-radius: 5px;
-  padding: 1em;
+  //padding: 1em;
   position: relative;
-  .prix {
-    border-radius: 50%;
-    display: inline-flex;
-    height: auto;
-    width: 5em;
-    height: 5em;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    position: absolute;
-    top: 0;
-    right: 0;
+  .menu-banner {
+    background-position: 65% 30%;
+    padding: 4em;
+    position: relative;
+    border-radius: 5px 5px 0px 0px;
+    //background-image: url(../assets/images/banner-bernardcook-min.jpeg);
+    h2, p:first-of-type { color: white; }
+    .prix {
+      border-radius: 50%;
+      display: inline-flex;
+      width: 6em;
+      height: 6em;
+      font-size: 1em;
+      background-color: white;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      position: absolute;
+      bottom: -3em;
+      right: 2em;
+    }
   }
 }
