@@ -11,5 +11,7 @@ navigationItems:
   link: /traiteur-fideua.html
 - name: Mes autres suggestions
   link: /autres-suggestions.html
+- name: Services aux entreprises
+  link: /entreprises.html
 - name: Contact & Devis
   link: /contact.html
