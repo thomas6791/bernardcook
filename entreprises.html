@@ -1,0 +1,76 @@
+---
+layout: default
+title: Traiteur pour entreprises | Bernard Cook
+titre : Services aux entreprises
+bread: Services aux entreprises
+---
+<section class="banner" style="background-image: url(assets/images/banner-bernardcook-min.jpeg);">
+  <div class="container">
+    <span class="titre-banner mini">Bernard Cook<br>
+    <span class="">au service de la Cuisine .</span></span>
+    <br><br>
+    <a class="btn btn-flat" href="/contact.html">Contact & devis</a>
+    <ul class="social-shares">
+      <a href="{{site.social_links.facebook}}" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+      <a href="{{site.social_links.instagram}}" target="_blank"><li><i class="fa fa-instagram" aria-hidden="true"></i></li></a>
+    </ul>
+  </div>
+  <h1 class="titre-page">{{ page.titre }}</h1>
+</section>
+
+<div class="">
+  <div class="sub-banner inside">
+    {% include breadcrumbs.html %}
+  </div>
+</div>
+<section class="inside">
+  <h2>Faites nous confiance à notre service de traiteur pour séminaire et autres événements d'entreprise</h2>
+  <p>Que ce soit lors de journées de formation, de séminaires ou lors d'autres événements d'entreprise, nous assurons la restauration autour de plats conviviaux.</p>
+
+  <h2>Différents plats conviviaux adaptés à vos événements d'entreprise</h2>
+  <p>Bernard Cook est spécialisé dans les plats conviviaux tel que la paëlla, la tartiflette et autres menus adaptés aux grandes occasions.</p>
+  <h3>Des demandes sur-mesure</h3>
+  <p>Contactez-nous via notre formulaire afin de discuter des modalités et des ajustements pour l'organisation de votre événement.</p>
+</section>
+<section id="contact">
+  <div class="inside">
+    <h2>Contact</h2>
+    {% include form.html %}
+    <div class="map">
+      <img src="https://api.mapbox.com/styles/v1/mapbox/light-v10/static/pin-s+fcbb6d(7.5315035,48.8471068)/7.5315035,48.8471068,14.32,0/500x500@2x?access_token=pk.eyJ1IjoidGhvbWFzLTY3IiwiYSI6ImNrN3hwZXpmMzBiZHozbm9za2ViMzIyMjgifQ.V_IVmR22KK45nQKxA7h61w" width="500" height="500" >
+    </div>
+  </div>
+</section>
+<script>
+  fetch('https://jsonplaceholder.typicode.com/users')
+  .then(checkStatus)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log('There was an error', error);
+  });
+
+
+function checkStatus(response) {
+  if (response.ok) {
+      return response;
+  }
+
+  let error = new Error(response.statusText);
+  error.response = response;
+  return Promise.reject(error);
+}
+</script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
