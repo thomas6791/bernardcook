@@ -13,5 +13,7 @@ navigationItems:
   link: /autres-suggestions.html
 - name: Services aux entreprises
   link: /entreprises.html
+- name: Offres
+  link: /offres.html
 - name: Contact & Devis
   link: /contact.html
