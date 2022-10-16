@@ -29,13 +29,6 @@ bread: Offres du moment
         <img src="/assets/images/offres/offre-coffret-noel.jpeg" width="30">
         <a href="/assets/images/offres/offre-coffret-noel.pdf">Offre de Noël</a>
       </li>
-      <li class="grid-item">
-        <img src="/assets/images/offres/offre-coffret-noel.jpeg" width="30">
-        <a href="/assets/images/offres/offre-coffret-noel.pdf">Offre de Noël</a>
-      </li>
-      <li class="grid-item">
-        <img src="/assets/images/offres/offre-coffret-noel.jpeg" width="30">
-        <a href="/assets/images/offres/offre-coffret-noel.pdf">Offre de Noël</a>
-      </li>
+      
     </ul>
 </section>
