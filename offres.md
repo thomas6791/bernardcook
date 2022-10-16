@@ -24,5 +24,12 @@ bread: Offres du moment
   </div>
 </div>
 <section class="inside">
-  <h2>Offre du moment</h2>
+  <div class="offres">
+    <ul>
+      <li>
+        <img src="/assets/images/offres/offre-coffret-noel.jpeg">
+        <a href="/assets/images/offres/offre-coffret-noel.pdf">Offre de Noël</a>
+      </li>
+    </ul>
+  </div>
 </section>
