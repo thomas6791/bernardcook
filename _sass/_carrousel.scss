@@ -73,6 +73,23 @@
 .plat-image { grid-area: plat-image; width: 100% !important; filter: grayscale(0%) !important; }
 .plat-texte { grid-area: plat-texte; }
 
+
+
+.grid-3 {
+  width:100%;
+  display: grid;
+  height: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px;
+  .grid-item {
+    flex-direction: column;
+    list-style: none;
+    border: solid 1px;
+    img { width: 100%; }
+    a {color: black;}
+  }
+}
+
 @media all and (min-width: 480px) and (max-width: 768px) {}
 @media all and (max-width: 480px) {
   .container-plat, .container-plat:nth-child(even) {

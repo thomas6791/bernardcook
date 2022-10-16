@@ -24,12 +24,18 @@ bread: Offres du moment
   </div>
 </div>
 <section class="inside">
-  <div class="offres">
-    <ul>
-      <li>
-        <img src="/assets/images/offres/offre-coffret-noel.jpeg">
+    <ul class="grid-3">
+      <li class="grid-item">
+        <img src="/assets/images/offres/offre-coffret-noel.jpeg" width="30">
+        <a href="/assets/images/offres/offre-coffret-noel.pdf">Offre de Noël</a>
+      </li>
+      <li class="grid-item">
+        <img src="/assets/images/offres/offre-coffret-noel.jpeg" width="30">
+        <a href="/assets/images/offres/offre-coffret-noel.pdf">Offre de Noël</a>
+      </li>
+      <li class="grid-item">
+        <img src="/assets/images/offres/offre-coffret-noel.jpeg" width="30">
         <a href="/assets/images/offres/offre-coffret-noel.pdf">Offre de Noël</a>
       </li>
     </ul>
-  </div>
 </section>
