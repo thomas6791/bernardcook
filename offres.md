@@ -27,8 +27,8 @@ bread: Offres du moment
     <ul class="grid-3">
       <li class="grid-item">
         <img src="/assets/images/offres/offre-coffret-noel.jpeg" width="30">
-        <a href="/assets/images/offres/offre-coffret-noel.pdf">Offre de Noël</a>
+        <a href="/assets/images/offres/offre-coffret-noel.pdf">Offre Coffret Bistronomique</a>
       </li>
-      
+
     </ul>
 </section>
