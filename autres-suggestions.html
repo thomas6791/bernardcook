@@ -3,6 +3,7 @@ layout: default
 title: Traiteur tartiflette, chili con carne,... | Bernard Cook
 bread: Autres suggestions
 ---
+<!--
 <section id="propos" class="inside">
   <h1>Mes autres suggestions</h1>
   {% include breadcrumbs.html %}
@@ -18,4 +19,21 @@ bread: Autres suggestions
     <br><br>
   </div>
   {% endfor %}
+</section>
+-->
+<section id="propos" class="inside">
+  <h1>Mes autres suggestions</h1>
+  {% include breadcrumbs.html %}
+  <br><br>
+  {% assign plats = site.plats | where: "published",true %}
+  <ul class="list-offres">
+    {% for plat in plats  %}
+    <li class="shadow">
+      <h2 class="plat-titre" id="{{ plat.title }}">{{ plat.title }}</h2>
+      <div class="offre-list-text">
+        {{ plat.content }}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
 </section>
