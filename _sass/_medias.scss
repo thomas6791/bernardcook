@@ -167,6 +167,11 @@
   padding: 0;
   display: flex;
   }
+  .list-offres {
+    li {
+      flex-direction: column;
+    }
+  }
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 /* Medium screens - TABLET */

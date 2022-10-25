@@ -136,3 +136,21 @@ h2, h3 { font-family: "Avenir"; text-align: center;
   margin-right: 1.5em;
   border-radius: 5px;
 }
+.list-offres {
+  li {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    list-style: none;
+    margin-bottom: 1em;
+    h2 {
+      font-size: 1.5em;
+      min-width: 20%;
+      width: auto;
+    }
+    .offre-list-text {
+    border-left: solid 1px lightgrey;
+    padding-left: 10px;
+    }
+  }
+}
