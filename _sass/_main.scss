@@ -129,3 +129,10 @@ h2, h3 { font-family: "Avenir"; text-align: center;
     padding: 3em;
   }
 }
+.img-float {
+  height: 100vh;
+  float: left;
+  object-fit: cover;
+  margin-right: 1.5em;
+  border-radius: 5px;
+}
