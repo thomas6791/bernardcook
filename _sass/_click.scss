@@ -1,0 +1,24 @@
+.plats-click {
+    .plat-click {
+        display: flex;
+        border: solid 1px rgb(229, 229, 229);
+        margin-bottom: 1em;
+        border-radius: 5px;
+        padding: 1em;
+        align-items: center;
+        .click-titre { width: 10%; border-right: 1px grey solid;}
+        .click-description { width: 40%; border-right: 1px grey solid; padding-left: 1em; }
+        .click-qte { width: 15%; border-right: 1px grey solid; padding: 0 1em; text-align: center; }
+        .click-prix {  width: 15%; border-right: 1px grey solid; padding: 0 1em; text-align: center; }
+        .click-btn { 
+            width: 20%;
+            padding-left: 1em;
+            button {
+                width: 100%;
+                justify-content: center;
+                background-color: $yellow;
+            }
+
+        }
+    }
+}

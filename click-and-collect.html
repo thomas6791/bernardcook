@@ -22,5 +22,35 @@ bread: Click & Collect
       {% include breadcrumbs.html %}
     </div>
 </div>
+<nav class="inside" id="nav-click">
+    <ul>
+        <li><a href="">Les plats</a></li>
+        <li><a href="">Conditions</a></li>
+        <li><a href="">Commander</a></li>
+        <li></li>
+    </ul>
+</nav>
 <section class="inside">
+    <h2>Les plats à emporter</h2>
+    <ul class="plats-click">
+        <li class="plat-click shadow">
+            <h3 class="click-titre">Paëlla</h3>
+            <p class="click-description">....</p>
+            <p class="click-qte">Pour .... pers.</p>
+            <p class="click-prix">Tarif : /pers.</p>
+            <div class="click-btn">
+                <button class="btn btn-primary">Ajouter</button>
+            </div>
+        </li>
+        <li class="plat-click">...</li>
+        <li class="plat-click">...</li>
+    </ul>
+</section>
+<section class="inside">
+    <h2>Conditions de livraison</h2>
+    <p>...</p>
+</section>
+<section class="inside">
+    <h2>Commander</h2>
+    {% include form.html %}
 </section>
