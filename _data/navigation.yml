@@ -13,6 +13,8 @@ navigationItems:
   link: /autres-suggestions.html
 - name: Services aux entreprises
   link: /entreprises.html
+- name: Click & Collect
+  link: /click-and-collect.html
 - name: Offres
   link: /offres.html
 - name: Contact & Devis
