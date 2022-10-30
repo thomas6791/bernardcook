@@ -32,7 +32,7 @@ bread: Click & Collect
 </nav>
 <section class="inside click-presentation">
     <div>
-        <p>Profitez de nos plats chez vous en optant pour le click & collect.<br>Les commandes se font une semaine à l'avance.<br>
+        <p>Profitez de nos plats conviviviaux pour chez vous en optant pour le click & collect.<br>Les commandes se font une semaine à l'avance.<br>
         Les plats sont récupérés tièdes, pouvant être réchauffé au four, plaque, gazinière,...<br><br>
         <span>Une consigne de 20€ par plat est demandée et restituée lors de la remise du plat.</span>
         </p>
@@ -45,9 +45,11 @@ bread: Click & Collect
 <section class="inside">
     <h2>Les plats à emporter</h2>
     <ul class="plats-click">
+        {% assign plats = site.plats | where: "published",true %}
+        {% for plat in plats  %}
         <li class="plat-click shadow">
             <div class="plat-first">
-                <h3 class="click-titre" data-plat="Paëlla">Paëlla</h3>
+                <h3 class="click-titre" data-plat="{{ plat.title }}">{{ plat.title }}</h3>
                 <p class="click-description" data-description="...">Consigne de 20€</p>
                 <p class="click-qte" data-qte="0">Pour 8 pers.</p>
             </div>
@@ -60,6 +62,7 @@ bread: Click & Collect
                     </div>
             </div>
         </li>
+        {% endfor %}
         <li class="plat-click">...</li>
         <li class="plat-click">...</li>
     </ul>
