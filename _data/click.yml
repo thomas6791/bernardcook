@@ -1,0 +1,15 @@
+- name: Paëlla
+  published: false
+  description: ...
+  pers: 8
+  prix: 110
+- name: Irish Stew Beef
+  published: true
+  description: ...
+  pers: 8
+  prix: 110
+- name: Tartiflette
+  published: true
+  description: ...
+  pers: 8
+  prix: 110
