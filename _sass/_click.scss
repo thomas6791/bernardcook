@@ -6,8 +6,8 @@
         border-radius: 5px;
         padding: 1em;
         align-items: center;
-        .plat-first { width: 65%; display: flex; align-items: center;}
-        .plat-second { width: 35%; display: flex; align-items: center;}
+        .plat-first { width: 100%; display: flex; align-items: center;}
+        .plat-second { width: 30%; display: flex; align-items: center;}
         .click-titre { width: 15%; border-right: 1px grey solid;}
         .click-description { width: 62%; border-right: 1px grey solid; padding-left: 1em; }
         .click-qte { width: 30%; border-right: 1px grey solid; padding: 0 1em; text-align: center; }
