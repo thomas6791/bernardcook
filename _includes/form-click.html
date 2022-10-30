@@ -21,59 +21,18 @@
       <input type="tel" name="tel" id="tel">
     </div>
   </div>
+  <p>Date de récupération des plats</p>
   <div class="full">
     <div class="half">
-    <label for="event">Evenement</label>
-    <select name="evenement" id="pet-select">
-      <option value="">Choisir un type d'événement</option>
-      <option value="mariage">Mariage</option>
-      <option value="baptême">Baptême</option>
-      <option value="fête de famille">Fête de famille</option>
-      <option value="anniversaire">Anniversaire</option>
-      <option value="départ en retraire">Départ en retraite</option>
-      <option value="comité d'entreprise">Comité d'entreprise</option>
-      <option value="autre">Autre</option>
-    </select>
+      <label for="day">Jour</label>
+      <input type="date" name="day" id="day">
     </div>
     <div class="half">
-      <label for="people">Nombre de personnes</label>
-      <input type="number" name="people" id="people">
+      <label for="hour">Heure</label>
+      <input type="time" step="900" name="hour" id="hour">
     </div>
   </div>
-  <div class="full">
-    <div class="half">
-      <label for="date">Date de la réception</label>
-      <input type="date" name="date" id="date">
-    </div>
-    <div class="half">
-      <label for="repas">Type de repas</label>
-      <select name="type_repas" id="type-repas">
-        <option value="">Choisir une période</option>
-        <option value="déjeuner">Déjeuner</option>
-        <option value="dîner">Dîner</option>
-      </select>
-    </div>
-  </div>
-  <div>
-    <label for="adresse">Adresse de la réception</label>
-    <input type="text" name="adresse reception" id="address">
-  </div>
-  <div class="full">
-    <div class="half">
-      <label for="code postal">Code Postal</label>
-      <input type="number" name="code_postal" id="cp">
-    </div>
-    <div class="half">
-      <label for="ville">Ville</label>
-      <input type="text" name="ville" id="ville">
-    </div>
-  </div>
-
-  <div>
-    <label for="message">Message</label>
-    <textarea name="message" id="message" cols="30" rows="5" class="form-control"></textarea>
-    </textarea>
-  </div>
+  
   <div class="checkbox">
     <label for="">
       <input type="checkbox" name="terms" value="J'accepte que mes données soient transmises dans le cadre de ma demande" required="">
