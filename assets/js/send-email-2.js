@@ -2,7 +2,7 @@ const serverToken = "2a1c571a-e3ae-4ca7-a64a-1ee5e58ebae9" //API Key
 let postmark = require("postmark")
 let client = new postmark.ServerClient(serverToken);
 
-document.querySelector(".btn.btn-primary").addEventListener("click", (event) => {
+document.querySelector("#test-commande").addEventListener("click", (event) => {
     debugger;
 client.sendEmail(
     {
@@ -19,4 +19,4 @@ client.sendEmail(
     console.log(response.MessageID);
     console.log(response.ErrorCode);
 });
-}
+});
