@@ -6,9 +6,9 @@ exports.handler = (event, context, callback) => {
 client.sendEmail(
     {
         From: "contact@bernardcook.fr", //Deine Emailadresse
-        To: "contact@bernardcook.fr", //Ziel Emailadresse
-        Subject: "test email",
-        HtmlBody: "test",
+        To: "hunckler.thomas@hotmail.fr", //Ziel Emailadresse
+        Subject: "Votre commande à retirer chez Bernard Cook",
+        HtmlBody: "<p>Votre commande a bien été prise en compte.</br>Date de prise de commande :</br>Coordonnées :</br>Nom : </br>Prénom : </br>Email : </br>Commande de :</br>A retirer le :</p>",
         TextBody: "test"
     }
 ).then(response => {
