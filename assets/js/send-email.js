@@ -1,31 +1,24 @@
-console.log("send email script");
-var postmark = require("postmark");
-var fs = require('fs');
+const serverToken = "2a1c571a-e3ae-4ca7-a64a-1ee5e58ebae9" //API Key
+let postmark = require("postmark")
+let client = new postmark.ServerClient(serverToken);
 
-// Send an email:
-var client = new postmark.Client("2a1c571a-e3ae-4ca7-a64a-1ee5e58ebae9");
-document.querySelector(".btn.btn-primary").addEventListener("click", (event) => {
-    debugger;
-    console.log("envoi mail 1");
-    client.sendEmail({
-    "From": "sender@example.com", 
-    "To": "recipient@example.us", 
-    "Subject": "Test", 
-    "TextBody": "Test Message",
-    "Attachments": [{
-      "Content": fs.readFileSync("./unicorns.jpg").toString('base64'),
-      "Name": "PrettyUnicorn.jpg",
-      "ContentType": "image/jpeg"
-    }]
-}, function(error, result) {
-    if(error) {
-        console.error("Unable to send via postmark: " + error.message);
-        return;
+exports.handler = (event, context, callback) => {
+client.sendEmail(
+    {
+        From: "contact@bernardcook.fr", //Deine Emailadresse
+        To: "hunckler.thomas@hotmail.fr", //Ziel Emailadresse
+        Subject: "test email",
+        HtmlBody: "test",
+        TextBody: "test"
     }
-    console.info("Sent to postmark for delivery")
+).then(response => {
+    console.log(response.To);
+    console.log(response.SubmittedAt);
+    console.log(response.Message);
+    console.log(response.MessageID);
+    console.log(response.ErrorCode);
 });
-
-});
+}
 
 
 
