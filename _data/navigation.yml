@@ -15,5 +15,7 @@ navigationItems:
   link: /entreprises.html
 - name: Offres
   link: /offres.html
+- name: Click & Collect
+  link: https://click-collect.bernardcook.fr/
 - name: Contact & Devis
   link: /contact.html
