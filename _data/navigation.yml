@@ -9,12 +9,8 @@ navigationItems:
   link: /traiteur-jumbalaya.html
 - name: Traiteur Fideua
   link: /traiteur-fideua.html
-- name: Mes autres suggestions
-  link: /autres-suggestions.html
 - name: Services aux entreprises
   link: /entreprises.html
-- name: Offres
-  link: /offres.html
 - name: Click & Collect
   link: https://click-collect.bernardcook.fr/
 - name: Contact & Devis
